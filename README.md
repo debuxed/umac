@@ -11,4 +11,4 @@ Usage: python sumac.py <wordlist>
 The <wordlist> is, as the name suggests, a list of words that will be checked for availability.
 The words should be seperated by newlines.
 
-If you have/prefer a comma-seperated list you can change `fcon_stripped.rstrip().split("\n")` on line 27 to `fcon_stripped.rstrip().split(",")`
+If you have a comma-seperated list, change `fcon_stripped.rstrip().split("\n")` on line 27 to `fcon_stripped.rstrip().split(",")`
