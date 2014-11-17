@@ -4,11 +4,14 @@ import urllib2
 import time
 import json
 
-# IMPORTANT SHIT READ
+# IMPORTANT READ
 #
 # Props to Skype for trying to prevent this by limiting request rate to their username availability check.
 # Leave this checker running overnight in a 'screen', if you don't know what
-# that is, look it up. It's slow to circumvent Microsoft's atttempt to block this.
+# that is, look it up. It's slow to circumvent Microsoft's attempt to block this.
+#
+# Refer to LICENSE.txt in the Github repository to see how you can use this.
+# Copyright (c) Dylan Hart 2014
 
 print "Skype User Mass Availability Checker, a.k.a. SUMAC"
 print "Created by Xeru [https://xeru.me]\n"
