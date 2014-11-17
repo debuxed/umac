@@ -3,9 +3,10 @@ import sys
 import urllib2
 import time
 import json
+
 # IMPORTANT SHIT READ
 #
-# Props to Skype for trying to prevent this by limiting search times.
+# Props to Skype for trying to prevent this by limiting request rate to their username availability check.
 # Leave this checker running overnight in a 'screen', if you don't know what
 # that is, look it up. It's slow to circumvent Microsoft's atttempt to block this.
 
