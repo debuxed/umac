@@ -20,8 +20,10 @@ Tor-Proxy Version
 
 For the Tor-Proxy version of SUMAC, there are a few prerequisites.
 
-1. stem: `pip install stem`, it is a python module for controlling Tor through a Python script. Necessary for changing IPs after every check. If you don't have pip installed, the package name for it should be `python-pip`.
+1. tor (duh!): You can find tutorials on OS-specific Tor installation around the web. Check https://torproject.org
 
-2. Configuration: In lines with comments "CHANGEME", you must update values to reflect your Tor installation. This is currently only the Tor control port and passphrase. Both can be found in the /etc/tor/torrc file (or other Tor config file on non-n*x)
+2. stem: `pip install stem`, it is a python module for controlling Tor through a Python script. Necessary for changing IPs after every check. If you don't have pip installed, the package name for it should be `python-pip`.
 
-3. A decent understanding of Tor (a.k.a. not spamming issues "why is it not a stable 3 seconds per check?!? wtf?!?")
+3. Configuration: In lines with comments "CHANGEME", you must update values to reflect your Tor installation. This is currently only the Tor control port and passphrase. Both can be found in the /etc/tor/torrc file (or other Tor config file on non-n*x)
+
+4. A decent understanding of Tor (a.k.a. not spamming issues "why is it not a stable 3 seconds per check?!? wtf?!?")
