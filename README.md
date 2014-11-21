@@ -20,7 +20,7 @@ Tor-Proxy Version
 
 For the Tor-Proxy version of SUMAC, there are a few prerequisites.
 
-1. torctl: `sudo apt-get install python-torctl` on debian-based distros
+1. stem: `pip install stem`, it is a python module for controlling Tor through a Python script. Necessary for changing IPs after every check. If you don't have pip installed, the package name for it should be `python-pip`.
 
 2. Configuration: In lines with comments "CHANGEME", you must update values to reflect your Tor installation. This is currently only the Tor control port and passphrase. Both can be found in the /etc/tor/torrc file (or other Tor config file on non-n*x)
 
