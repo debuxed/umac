@@ -9,9 +9,9 @@ If you have a comma-seperated list, change `fcon_stripped.rstrip().split("\n")` 
 
 ### Dependencies
 
-1. Tor (duh!): You can find tutorials on OS-specific Tor installation around the web. Check https://torproject.org
+1. Tor: You can find tutorials on OS-specific Tor installation around the web. Check https://torproject.org
 
-2. stem: `pip install stem` should work, it is a python module for controlling Tor through a Python script. Necessary for changing IPs between checks. If you do not have pip installed, the package name for it should be `python-pip`.
+2. stem: `pip install stem` should work, it is a python module for controlling Tor through a Python script. Necessary for changing IPs between checks. If you do not have pip installed and you don't know how to install it, lookup installing pip for python on your OS.
 
 3. requesocks: `pip install requesocks` should do the trick; similar to "requests", except allows for socks5 proxy. Necessary for Tor to make connections.
 
