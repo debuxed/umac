@@ -26,7 +26,8 @@ For the Tor-enabled version of SUMAC, there are a few dependencies.
 
 3. requesocks: `pip install requesocks` should do the trick; similar to "requests", except allows for socks5 proxy. Necessary for Tor to make connections.
 
-4. Configuration: Here is a sample configuration for Tor: https://pod.so/?8e4b1f136b07f74a#TsACK1KlgU9pY45oX33w8mFOHXLg/p5U7hNe08cu1qU=
+4. Configuration: Here is a sample configuration for Tor:
+https://pod.so/?dcce691a2c5a8709#Czsym7WXZCdDBrmh/T0rh5paCu5yWJ/yQAxrcZVxJtw=
 This shows the lines that should be uncommented. If anything else is running on Tor, just be sure these values are set (or changed in the script). Make sure cookie authentication is enabled.
 
 5. A decent understanding of Tor (a.k.a. not spamming issues "why is it not a stable 1 check per second?!? wtf?!?")
