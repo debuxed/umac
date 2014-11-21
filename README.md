@@ -12,3 +12,13 @@ The <wordlist> is, as the name suggests, a list of words that will be checked fo
 The words should be seperated by newlines.
 
 If you have a comma-seperated list, change `fcon_stripped.rstrip().split("\n")` on line 27 to `fcon_stripped.rstrip().split(",")`
+
+Tor-Proxy Version
+=====
+
+(Incomplete...) (Haven't even made the tor-proxy version yet...) (ayy...)
+
+For the Tor-Proxy version of SUMAC, there are a few prerequisites.
+1. torctl: `sudo apt-get install python-torctl` on debian-based distros
+2. Configuration: In lines with comments "CHANGEME", you must update values to reflect your Tor installation. This is currently only the Tor control port and passphrase. Both can be found in the /etc/tor/torrc file (or other Tor config file on non-n*x)
+3. A decent understanding of Tor (a.k.a. not spamming issues "why is it not a stable 3 seconds per check?!? wtf?!?")
