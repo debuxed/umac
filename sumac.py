@@ -68,9 +68,9 @@ else:
             validator_json_decoded = json.loads(validator_resptxt)
             validator_status = validator_json_decoded['status']
             if validator_status == 406:
-                print user + " is taken"
+                print user + " is \033[91mtaken\033[0m [\033[91m" + str(validator_status) + "\033[0m]"
             elif validator_status == 200:
-                print user + " is available"
+                print user + " is \033[92mavailable\033[0m [\033[92m" + str(validator_status) + "\033[0m]"
                 with open("test.txt", "a") as availfile:
                     availfile.write(user + "\n")
             else:
