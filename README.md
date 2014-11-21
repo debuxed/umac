@@ -13,17 +13,20 @@ The words should be seperated by newlines.
 
 If you have a comma-seperated list, change `fcon_stripped.rstrip().split("\n")` on line 27 to `fcon_stripped.rstrip().split(",")`
 
-Tor-Proxy Version
+Tor-Enabled Version
 =====
 
-(Incomplete...) (Haven't even made the tor-proxy version yet...) (ayy...)
+(Documentation incomplete)
 
-For the Tor-Proxy version of SUMAC, there are a few prerequisites.
+For the Tor-enabled version of SUMAC, there are a few dependencies.
 
-1. tor (duh!): You can find tutorials on OS-specific Tor installation around the web. Check https://torproject.org
+1. Tor (duh!): You can find tutorials on OS-specific Tor installation around the web. Check https://torproject.org
 
-2. stem: `pip install stem`, it is a python module for controlling Tor through a Python script. Necessary for changing IPs after every check. If you don't have pip installed, the package name for it should be `python-pip`.
+2. stem: `pip install stem` should work, it is a python module for controlling Tor through a Python script. Necessary for changing IPs between checks. If you do not have pip installed, the package name for it should be `python-pip`.
 
-3. Configuration: In lines with comments "CHANGEME", you must update values to reflect your Tor installation. This is currently only the Tor control port and passphrase. Both can be found in the /etc/tor/torrc file (or other Tor config file on non-n*x)
+3. requesocks: `pip install requesocks` should do the trick; similar to "requests", except allows for socks5 proxy. Necessary for Tor to make connections.
 
-4. A decent understanding of Tor (a.k.a. not spamming issues "why is it not a stable 3 seconds per check?!? wtf?!?")
+4. Configuration: Here is a sample configuration for Tor: https://pod.so/?8e4b1f136b07f74a#TsACK1KlgU9pY45oX33w8mFOHXLg/p5U7hNe08cu1qU=
+This shows the lines that should be uncommented. If anything else is running on Tor, just be sure these values are set (or changed in the script). Make sure cookie authentication is enabled.
+
+5. A decent understanding of Tor (a.k.a. not spamming issues "why is it not a stable 1 check per second?!? wtf?!?")
