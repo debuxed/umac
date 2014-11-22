@@ -71,8 +71,9 @@ else:
                 print user + " is \033[91mtaken\033[0m [\033[91m" + str(validator_status) + "\033[0m]"
             elif validator_status == 200:
                 print user + " is \033[92mavailable\033[0m [\033[92m" + str(validator_status) + "\033[0m]"
-                with open("test.txt", "a") as availfile:
+                with open("available-skype.txt", "a") as availfile:
                     availfile.write(user + "\n")
+                    availfile.close()
             else:
                 print user + " returned unknown status " + validator_status
             time.sleep(1)
