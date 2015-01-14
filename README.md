@@ -7,6 +7,8 @@ The words should be seperated by newlines.
 
 If you have a comma-seperated list, change `fcon_stripped.rstrip().split("\n")` on line 27 to `fcon_stripped.rstrip().split(",")`
 
+There may be false positives since the Tor network is not stable enough to guarantee all connecting IPs will be different. You should test all usernames before thinking they're available. No false-negatives will occur unless a Tor node fails and returns incorrect data (VERY VERY rare.)
+
 ### Dependencies
 
 1. Tor: You can find tutorials on OS-specific Tor installation around the web. Check https://torproject.org
