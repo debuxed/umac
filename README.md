@@ -18,7 +18,7 @@ There may be false positives since the Tor network is not stable enough to guara
 3. requesocks: `pip install requesocks` should do the trick; similar to "requests", except allows for socks5 proxy. Necessary for Tor to make connections.
 
 4. Configuration: Here is a sample configuration for Tor:
-https://pod.so/?dcce691a2c5a8709#Czsym7WXZCdDBrmh/T0rh5paCu5yWJ/yQAxrcZVxJtw=
+https://podso.net/?dcce691a2c5a8709#Czsym7WXZCdDBrmh/T0rh5paCu5yWJ/yQAxrcZVxJtw=
 This shows the lines that should be uncommented. If anything else is running over Tor on the machine, you don't need to clear it, just be sure these values are set (or changed in the script). Make sure cookie authentication is enabled.
 
 5. A decent understanding of Tor (a.k.a. not spamming issues "why is it not a stable 1 check per second?!? wtf?!?")
