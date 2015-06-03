@@ -59,7 +59,7 @@ else:
             with Controller.from_port(port = 9051) as controller: # Tor control port is defined here
                 controller.authenticate()
                 controller.signal(Signal.NEWNYM)
-            time.sleep(1)
+            time.sleep(2)
             validator_url = "https://login.skype.com/json/validator?new_username=" + user
             validator_session = requests.session()
             validator_session.proxies = {'https': 'socks5://127.0.0.1:9050'}
@@ -76,6 +76,9 @@ else:
                     availfile.close()
             else:
                 print user + " returned unknown status " + validator_status
-            time.sleep(1)
+            with Controller.from_port(port = 9051) as controller: # Tor control port is defined here
+                controller.authenticate()
+                controller.signal(Signal.NEWNYM)
+            time.sleep(2)
     except (KeyboardInterrupt, SystemExit):
         print "\nSUMAC exiting: I am terminated"
