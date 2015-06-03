@@ -3,14 +3,8 @@
 # Refer to LICENSE.txt in the Github repository to see how you can use this.
 # Copyright (c) Dylan Hart 2014
 
-try:
-  import os
-except ImportError:
-  print "No os!"
-try:
-  import sys
-except ImportError:
-  print "No sys!"
+import os, sys, random
+
 try:
   import time
 except ImportError:
@@ -34,21 +28,22 @@ except ImportError:
   print "Dependencies are listed in SUMAC's readme on Github!"
 
 print "\nSkype User Mass Availability Checker, a.k.a. SUMAC"
-print "Created by Xeru [https://xeru.me]"
+print "Created by Xeru [https://xeruci.de]"
 print "Experimental, report issues at https://github.com/exec/sumac/\n"
 try:
     sys.argv[1]
 except NameError:
     print "You must specify a wordlist!"
-    print "Usage: " + sys.argv[0] + " <wordlist>"
+    print "Usage: " + sys.argv[0] + " [-d] <wordlist>"
 except IndexError:
     print "You must specify a wordlist!"
-    print "Usage: " + sys.argv[0] + " <wordlist>"
+    print "Usage: " + sys.argv[0] + " [-d] <wordlist>"
 else:
     try:
         fname = sys.argv[1]
         fh = open(fname)
         fcon = fh.read()
+        count = 0
         fcon_stripped = fcon.replace(" ", "")
         fcon_stripped = fcon_stripped.replace("\r", "")
         fcon_arr = fcon_stripped.rstrip().split("\n")
@@ -56,10 +51,6 @@ else:
             open('available-skype.txt', 'w').close()
         print str(len(fcon_arr)) + " names loaded, and here we go!\n"
         for user in fcon_arr:
-            with Controller.from_port(port = 9051) as controller: # Tor control port is defined here
-                controller.authenticate()
-                controller.signal(Signal.NEWNYM)
-            time.sleep(2)
             validator_url = "https://login.skype.com/json/validator?new_username=" + user
             validator_session = requests.session()
             validator_session.proxies = {'https': 'socks5://127.0.0.1:9050'}
@@ -76,9 +67,10 @@ else:
                     availfile.close()
             else:
                 print user + " returned unknown status " + validator_status
-            with Controller.from_port(port = 9051) as controller: # Tor control port is defined here
-                controller.authenticate()
-                controller.signal(Signal.NEWNYM)
-            time.sleep(2)
+            if not count % 4:
+                with Controller.from_port(port = 9051) as controller: # Tor control port is defined here
+                    controller.authenticate()
+                    controller.signal(Signal.NEWNYM)
+            count = count + 1
     except (KeyboardInterrupt, SystemExit):
         print "\nSUMAC exiting: I am terminated"
