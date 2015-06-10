@@ -71,7 +71,7 @@ else:
                 with Controller.from_port(port = 9051) as controller: # Tor control port is defined here
                     controller.authenticate()
                     controller.signal(Signal.NEWNYM)
-                time.sleep(7.5)
+                time.sleep(8)
             count = count + 1
     except (KeyboardInterrupt, SystemExit):
         print "\nSUMAC exiting: I am terminated"
