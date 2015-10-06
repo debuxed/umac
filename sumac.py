@@ -67,11 +67,12 @@ else:
                     availfile.close()
             else:
                 print user + " returned unknown status " + validator_status
-            if not count % 5:
+            if not count % 4:
                 with Controller.from_port(port = 9051) as controller: # Tor control port is defined here
                     controller.authenticate()
                     controller.signal(Signal.NEWNYM)
-                time.sleep(8)
+                time.sleep(9.2)
             count = count + 1
+            time.sleep(0.5)
     except (KeyboardInterrupt, SystemExit):
         print "\nSUMAC exiting: I am terminated"
