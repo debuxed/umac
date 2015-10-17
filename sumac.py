@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # Refer to LICENSE.txt in the Github repository to see how you can use this.
-# Copyright (c) Dylan Hart 2014
+# Copyright (c) Dylan Hart 2015
 
 import os, sys, random
 
@@ -28,7 +28,7 @@ except ImportError:
   print "Dependencies are listed in SUMAC's readme on Github!"
 
 print "\nSkype User Mass Availability Checker, a.k.a. SUMAC"
-print "Created by Xeru [https://xeruci.de]"
+print "Created by Dylan Hart (@dhxrt)"
 print "Experimental, report issues at https://github.com/exec/sumac/\n"
 try:
     sys.argv[1]
