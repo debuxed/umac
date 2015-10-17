@@ -27,9 +27,10 @@ except ImportError:
   print "try 'pip install stem'"
   print "Dependencies are listed in SUMAC's readme on Github!"
 
-print "\nSkype User Mass Availability Checker, a.k.a. SUMAC"
-print "Created by Dylan Hart (@dhxrt)"
-print "Experimental, report issues at https://github.com/exec/sumac/\n"
+print "\nSUMAC - Skype Username Mass Availability Checker  Copyright (C) 2015  Dylan Hart"
+print "sumac.py comes with ABSOLUTELY NO WARRANTY, to the extent permitted by applicable law."
+print "This is free software, and you are welcome to redistribute it under certain conditions.
+print "View the 'LICENSE' file included in the SUMAC GitHub repository for more information.\n"
 try:
     sys.argv[1]
 except NameError:
