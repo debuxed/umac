@@ -1,5 +1,5 @@
 # SUMAC
-#### Skype User Mass Availability Checker
+#### Skype Username Mass Availability Checker
 
 Usage: python sumac.py <wordlist>
 The <wordlist> is, as the name suggests, a list of words that will be checked for availability.
