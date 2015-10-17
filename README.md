@@ -32,6 +32,7 @@ These configuration changes should not cause issues with other uses of Tor; howe
 ### License
 
 SUMAC - Skype Username Mass Availability Checker
+
 Copyright (C) 2015  Dylan Hart (twitter.com/dhxrt)
 
 This program is free software: you can redistribute it and/or modify
