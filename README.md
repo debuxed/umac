@@ -28,3 +28,21 @@ Ensure that cookie authentication is enabled in your torrc file, in order for th
 These configuration changes should not cause issues with other uses of Tor; however, I would personally recommend leaving cookie authentication disabled when SUMAC is not in use.
 
 5. A decent understanding of Tor (a.k.a. not spamming issues "why is it not a stable 1 check per second?!? wtf?!?")
+
+### License
+
+SUMAC - Skype Username Mass Availability Checker
+Copyright (C) 2015  Dylan Hart (twitter.com/dhxrt)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+A copy of this license is provided in the SUMAC GitHub
+repository, in the root directory, under the filename "LICENSE".
