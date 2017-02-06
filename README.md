@@ -1,7 +1,7 @@
 # UMAC
 #### Username Mass Availability Checkers
 
-Usage: python umac-<skype/steam/github>.py <wordlist>
+Usage: ./umac.sh <skype/github/steam>
 The <wordlist> is, as the name suggests, a list of words that will be checked for availability.
 The words should be seperated by newlines.
 
