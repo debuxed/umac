@@ -1,13 +1,16 @@
 # UMAC
 #### Username Mass Availability Checkers
 
-Usage: ./umac.sh [skype/github/steam] [wordlist]
+Usage: `./umac.sh <skype/github/steam> <wordlist>`
+Wordlist must be seperated by new lines only, no commas, etc.
 
 If you have a comma-seperated list, change `fcon_stripped.rstrip().split("\n")` on line 27 to `fcon_stripped.rstrip().split(",")`
 
 There may be false positives since the Tor network is not stable enough to guarantee all connecting IPs will be different. You should test all usernames before thinking they're available. No false-negatives will occur unless a Tor node fails and returns incorrect data (VERY VERY rare.)
 
 ### Dependencies for umac-skype.py
+
+Since Skype works extra-hard to limit the number of name lookups you can do in a given time, we have to either abide by its limits (VERY slow) or use Tor (still slow, but not quite as bad). This brings in a few extra dependencies that the other scripts don't require.
 
 1. Tor: You can find tutorials on OS-specific Tor installation around the web. Check https://torproject.org
 
