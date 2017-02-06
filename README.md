@@ -1,9 +1,7 @@
 # UMAC
 #### Username Mass Availability Checkers
 
-Usage: ./umac.sh <skype/github/steam>
-The <wordlist> is, as the name suggests, a list of words that will be checked for availability.
-The words should be seperated by newlines.
+Usage: ./umac.sh [skype/github/steam] [wordlist]
 
 If you have a comma-seperated list, change `fcon_stripped.rstrip().split("\n")` on line 27 to `fcon_stripped.rstrip().split(",")`
 
