@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # Refer to LICENSE.txt in the Github repository to see how you can use this.
-# Copyright (c) Dylan Hart 2015
+# Copyright (c) Dylan Hart 2017
 
 import os, sys, random
 
@@ -26,7 +26,7 @@ except ImportError:
   print "No stem!"
   print "try 'pip install stem'"
   print "Dependencies are listed in SUMAC's readme on Github!"
-print "\nSUMAC - Skype Username Mass Availability Checker  Copyright (C) 2015  Dylan Hart"
+print "\nSUMAC - Skype Username Mass Availability Checker  Copyright (C) 2017  Dylan Hart"
 print "sumac.py comes with ABSOLUTELY NO WARRANTY, to the extent permitted by applicable law."
 print "This is free software, and you are welcome to redistribute it under certain conditions."
 print "View the 'LICENSE' file included in the SUMAC GitHub repository for more information.\n"
