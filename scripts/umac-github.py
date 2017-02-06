@@ -26,10 +26,10 @@ try:
     sys.argv[1]
 except NameError:
     print "You must specify a wordlist!"
-    print "Usage: " + sys.argv[0] + " <wordlist> [av|none]"
+    print "Usage: ./umac.sh <skype/github/steam> <wordlist>"
 except IndexError:
     print "You must specify a wordlist!"
-    print "Usage: " + sys.argv[0] + " <wordlist> [av|none]"
+    print "Usage: ./umac.sh <skype/github/steam> <wordlist>"
 else:
     try:
         sys.argv[2]
