@@ -2,6 +2,7 @@
 #### Username Mass Availability Checkers
 
 Usage: `./umac.sh <skype/github/steam> <wordlist>`
+
 Wordlist must be seperated by new lines only, no commas, etc.
 
 If you have a comma-seperated list, change `fcon_stripped.rstrip().split("\n")` on line 27 to `fcon_stripped.rstrip().split(",")`
