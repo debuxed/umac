@@ -3,20 +3,13 @@
 # Refer to LICENSE.txt in the Github repository to see how you can use this.
 # Copyright (c) Dylan Hart 2017
 
-import os, sys, random
+import os, sys, random, time, json
 
-try:
-  import time
-except ImportError:
-  print "No time! *sprints away*"
-try:
-  import json
-except ImportError:
-  print "No json!"
 try:
   import requests
 except ImportError:
-  print "No requests!"
+  print "No requests package! Install with pip: pip install requests"
+  sys.exit(1)
 
 print "\nSTUMAC - Steam Username Mass Availability Checker  Copyright (C) 2017  Dylan Hart"
 print "stumac.py comes with ABSOLUTELY NO WARRANTY, to the extent permitted by applicable law."
