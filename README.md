@@ -5,13 +5,11 @@ Usage: `./umac.sh <github/reddit/steam> <wordlist>`
 
 Wordlist must be seperated by new lines only, no commas, etc.
 
-If you have a comma-seperated list, change `fcon_stripped.rstrip().split("\n")` on line 27 to `fcon_stripped.rstrip().split(",")`
-
 ### License
 
-UMAC - Username Mass Availability Checkers
+UMAC - Username Mass Availability Checker
 
-Copyright (C) 2017  Dylan Hart (twitter.com/bumfucker)
+Copyright (C) 2018  Dylan Hart (twitter.com/dhxrt / github.com/xeru)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
