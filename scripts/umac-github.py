@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # Refer to LICENSE.txt in the Github repository to see how you can use this.
-# Copyright (c) Dylan Hart 2017
+# Copyright (c) Dylan Hart 2018
 
 import os, sys, random, time, json
 
