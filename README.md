@@ -9,7 +9,7 @@ Wordlist must be seperated by new lines only, no commas, etc.
 
 UMAC - Username Mass Availability Checker
 
-Copyright (C) 2018  Dylan Hart (twitter.com/dhxrt / github.com/xeru)
+Copyright (C) 2020  Dylan Hart (github.com/exec)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,5 +21,5 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
-A copy of this license is provided in the SUMAC GitHub
+A copy of this license is provided in the UMAC GitHub
 repository, in the root directory, under the filename "LICENSE".
