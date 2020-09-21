@@ -75,6 +75,6 @@ else:
                     af.write(user + "\n")
                     af.close()
             else:
-                print user + " returned unknown status " + status
+                print user + " returned unknown status " + str(status)
     except (KeyboardInterrupt, SystemExit):
         print "\nGUMAC exiting: I am terminated"
